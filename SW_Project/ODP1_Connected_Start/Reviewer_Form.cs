@@ -56,7 +56,7 @@ namespace ODP1_Connected_Start
             int id = Convert.ToInt32(cbMagazines.SelectedItem);
             var table = magazinesDS.Tables["magazines"];
 
-            // Fast lookup using primary key
+            
             DataRow[] matches = table.Select($"magazine_id = {id}");
             DataRow row = (matches.Length > 0) ? matches[0] : null;
 
@@ -98,13 +98,13 @@ namespace ODP1_Connected_Start
 
             if (row != null)
             {
-                // Mark approved in-memory
+                
                 row["is_approved"] = 1;
 
-                // Push change to database
+                
                 magazinesAdapter.Update(magazinesDS, "magazines");
 
-                // Remove from DataSet
+                
                 table.Rows.Remove(row);
                 MessageBox.Show($"Magazine {id} approved and saved to DB.", "Approved", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
