@@ -65,6 +65,12 @@
     <Compile Include="Reader_Form.Designer.cs">
       <DependentUpon>Reader_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reviewer_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reviewer_Form.Designer.cs">
+      <DependentUpon>Reviewer_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sign_Up_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,11 +85,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Writer_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Writer_Form.Designer.cs">
+      <DependentUpon>Writer_Form.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Login_Form.resx">
       <DependentUpon>Login_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reader_Form.resx">
       <DependentUpon>Reader_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reviewer_Form.resx">
+      <DependentUpon>Reviewer_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sign_Up_Form.resx">
       <DependentUpon>Sign_Up_Form.cs</DependentUpon>
@@ -101,6 +116,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Writer_Form.resx">
+      <DependentUpon>Writer_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
